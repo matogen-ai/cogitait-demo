@@ -12079,6 +12079,15 @@ section#contact form#contactForm :-ms-input-placeholder {
   .item-container {
     flex-direction: row;
   }
+
+  #our-work {
+    position: sticky;
+    display: flex;
+    top: 0;
+    width: 100%;
+    padding-top: 0rem;
+    padding-bottom: 2.5rem;
+  }
 }
 
 @media (min-width: 875px) {
@@ -12088,26 +12097,36 @@ section#contact form#contactForm :-ms-input-placeholder {
   }
 }
 
+.thumbnail {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
 
+.thumbnail img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
 
+.thumbnail h3 {
+  font-size: 18px;
+  margin-top: 10px;
+}
 
-  .thumbnail {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: center;
-    width: 200px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-  }
+/* #our-work {
+  position: relative;
+  top: 0;
+  width: 100%;
+  background-color: #f8f9fa;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: block; 
+} */
 
-  .thumbnail img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-  }
-
-  .thumbnail h3 {
-    font-size: 18px;
-    margin-top: 10px;
-  }
-
+#content {
+  margin-top: 50px; /* Adjust based on the height of your sticky div */
+}
