@@ -12087,6 +12087,7 @@ section#contact form#contactForm :-ms-input-placeholder {
     width: 100%;
     padding-top: 0rem;
     padding-bottom: 2.5rem;
+    z-index: 10;
   }
 }
 
@@ -12127,6 +12128,10 @@ section#contact form#contactForm :-ms-input-placeholder {
   display: block; 
 } */
 
-#content {
-  margin-top: 50px; /* Adjust based on the height of your sticky div */
+.content {
+  margin-top: 150px; /* Adjust based on the height of your sticky div */
+}
+
+.hide-me{
+  /* display: none;   */
 }
