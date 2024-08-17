@@ -12089,6 +12089,10 @@ section#contact form#contactForm :-ms-input-placeholder {
     padding-bottom: 2.5rem;
     z-index: 10;
   }
+  .content {
+    margin-top: 0px; /* Adjust based on the height of your sticky div */
+  }
+  
 }
 
 @media (min-width: 875px) {
@@ -12118,20 +12122,10 @@ section#contact form#contactForm :-ms-input-placeholder {
   margin-top: 10px;
 }
 
-/* #our-work {
-  position: relative;
-  top: 0;
-  width: 100%;
-  background-color: #f8f9fa;
-  padding: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  display: block; 
-} */
-
-.content {
-  margin-top: 150px; /* Adjust based on the height of your sticky div */
-}
-
 .hide-me{
   /* display: none;   */
 }
+
+/* #work-item:focus {
+  outline: none;
+} */
