@@ -8142,6 +8142,10 @@ fieldset:disabled .btn {
   color: #6c757d !important;
 }
 
+.text-muted-center{
+  text-align: center;
+}
+
 .text-black-50 {
   --bs-text-opacity: 1;
   color: rgba(0, 0, 0, 0.5) !important;
@@ -11683,7 +11687,7 @@ p {
 }
 
 .page-section {
-  padding: 6rem 0;
+  padding: 3rem 0;
 }
 .page-section h2.section-heading,
 .page-section .section-heading.h2 {
@@ -12057,6 +12061,12 @@ section#contact form#contactForm :-ms-input-placeholder {
   flex-direction: column;
 }
 
+.item-text-about-margin{
+  margin-left: 0;
+  margin-right: 0;
+}
+/* blah */
+
 .item .img {
   width: 80%;
 }
@@ -12076,6 +12086,10 @@ section#contact form#contactForm :-ms-input-placeholder {
   .item .item-text {
     margin-top: 2.5rem;
     height: 100%;
+  }
+  .item-text-about-margin{
+    margin-left: 1.5em;
+    margin-right: 1.5em;
   }
 }
 
