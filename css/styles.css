@@ -12085,7 +12085,6 @@ section#contact form#contactForm :-ms-input-placeholder {
   }
 
   #our-work {
-    position: sticky;
     display: flex;
     top: 0;
     width: 100%;
