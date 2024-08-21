@@ -49,24 +49,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
     });
   });
 });
-// function scrollToSection(event, sectionId) {
-//   event.preventDefault();
-//   const minWidth = 600;
-//   if (window.innerWidth > minWidth) {
-//     const offset = 235; // Adjust this value based on the height of your sticky header
-//     const section = document.getElementById(sectionId);
-//     const sectionPosition = section.getBoundingClientRect().top + window.pageYOffset - offset;
-//     window.scrollTo({
-//       top: sectionPosition,
-//       behavior: 'smooth'
-//     }
-//   )
-//   } else {
-//     // Default behavior for smaller screens
-//     window.location.hash = sectionId;
-//   }
-  
-// }
+
 function toggleDescription(id, showLinkId) {
   debugger
   var description = document.getElementById(id);
