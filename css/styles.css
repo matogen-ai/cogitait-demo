@@ -12169,9 +12169,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 .clickable-header {
-  cursor: pointer;
   color: lightblue;
-  /* text-decoration: underline; */
 }
 
 .description {
@@ -12184,3 +12182,16 @@ section#contact form#contactForm :-ms-input-placeholder {
   height: 3em; 
   width: 7em;
 }
+
+.toggle-link {
+  color: #007bff;
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 0.9rem;
+}
+
+.toggle-link:hover {
+  text-decoration: underline;
+}
+

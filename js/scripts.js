@@ -67,11 +67,16 @@ window.addEventListener("DOMContentLoaded", (event) => {
 //   }
   
 // }
-function toggleDescription(id) {
+function toggleDescription(id, showLinkId) {
+  debugger
   var description = document.getElementById(id);
+  var showLink = document.getElementById(showLinkId);
   if (description.style.display === "none") {
       description.style.display = "block";
+      showLink.style.display = "none"
   } else {
       description.style.display = "none";
+      if(showLink)
+        showLink.style.display = "block"
   }
 }
