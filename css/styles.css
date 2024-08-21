@@ -12183,3 +12183,26 @@ section#contact form#contactForm :-ms-input-placeholder {
   text-decoration: underline;
 }
 
+.contact-img{
+  width: 1em;
+  height: 1em;
+  margin-right: 1em;
+}
+
+.flex-vertical-center{
+  display: flex;
+  align-items: center;
+  
+}
+
+.contact-label-image{
+  width: 12em; 
+}
+
+.contact-label-no-image{
+  width: 12em;
+  padding-left: 2em; 
+}
+.overwrite-paragraph-bottom-margin{
+  margin-bottom: 0;
+}
