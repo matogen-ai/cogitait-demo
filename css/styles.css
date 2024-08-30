@@ -4431,6 +4431,7 @@ fieldset:disabled .btn {
   .navbar-expand-sm .offcanvas-header {
     display: none;
   }
+
   .navbar-expand-sm .offcanvas {
     position: inherit;
     bottom: 0;
@@ -12030,6 +12031,31 @@ section#contact form#contactForm :-ms-input-placeholder {
 .item .img {
   width: 80%;
 }
+
+.desktop-logo-container{
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .desktop-logo-container{
+    display: block;
+    height: 10.5rem;
+    width: 10.5rem;
+    top: 1.5rem;
+    position: absolute;
+  }
+  .desktop-logo-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* or any specific width you want */
+    height: auto; /* maintain aspect ratio */
+    display: block; /* remove any extra space below the image */
+  }
+  
+}
+
+
 
 @media (min-width: 600px) {
   .item-container {
