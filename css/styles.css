@@ -12032,30 +12032,25 @@ section#contact form#contactForm :-ms-input-placeholder {
   width: 80%;
 }
 
-.desktop-logo-container{
+.mobile-logo{
+  display: block;
+  height: 2rem;
+}
+
+.desktop-logo{
   display: none;
 }
 
 @media (min-width: 576px) {
-  .desktop-logo-container{
+  .desktop-logo{
     display: block;
-    height: 10.5rem;
-    width: 10.5rem;
-    top: 1.5rem;
-    position: absolute;
+    height: 2rem;
   }
-  .desktop-logo-image{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%; /* or any specific width you want */
-    height: auto; /* maintain aspect ratio */
-    display: block; /* remove any extra space below the image */
+  .mobile-logo{
+    display: none;
   }
   
 }
-
-
 
 @media (min-width: 600px) {
   .item-container {
@@ -12199,4 +12194,22 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 .overwrite-paragraph-bottom-margin{
   margin-bottom: 0;
+}
+
+p{
+  pointer-events: none;
+  user-select: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  pointer-events: none; 
+  user-select: none; 
+}
+
+#spinner {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000; /* Ensure it appears above other elements */
 }
