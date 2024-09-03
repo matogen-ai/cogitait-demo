@@ -12026,7 +12026,6 @@ section#contact form#contactForm :-ms-input-placeholder {
   margin-left: 0;
   margin-right: 0;
 }
-/* blah */
 
 .item .img {
   width: 80%;
@@ -12044,7 +12043,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 @media (min-width: 576px) {
   .desktop-logo{
     display: block;
-    height: 2rem;
+    height: 4rem;
   }
   .mobile-logo{
     display: none;
@@ -12212,4 +12211,35 @@ h1, h2, h3, h4, h5, h6 {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1000; /* Ensure it appears above other elements */
+}
+
+#bottom-child-industries-button {
+  position: relative;
+  top: 5rem;
+  border: 1px solid #ccc;
+}
+
+@media (min-width: 768px) {
+  #bottom-child-industries-button {
+    position: relative;
+    top: 11rem; 
+    border: 1px solid #ccc;
+  }
+}
+
+.case-studies-link{
+  pointer-events: auto;
+}
+
+.center-div {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  margin-bottom: 2rem;
+}
+
+.left-align-list {
+  list-style-position: inside;
+  padding-left: 0;
+  text-align: left;
 }
