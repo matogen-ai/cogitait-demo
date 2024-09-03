@@ -76,6 +76,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
               if (Object.hasOwn(data, 'errors')) {
                   alert(data["errors"].map(error => error["message"]).join(", "));
               } else {
+                debugger
                   alert("Oops! There was a problem submitting your form");
               }
           });
