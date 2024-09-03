@@ -131,6 +131,7 @@ h1,
   font-family: 'Orbitron', sans-serif;
   font-weight: 700;
   line-height: 1.2;
+  color: #464544;
 }
 
 h1,
@@ -11871,6 +11872,7 @@ header.masthead .masthead-heading {
   font-family: 'Orbitron', sans-serif;
   font-weight: 700;
   margin-bottom: 0;
+  color: #464544;
 }
 #industries .portfolio-item .portfolio-caption .portfolio-caption-subheading {
   font-style: italic;
@@ -11937,11 +11939,13 @@ header.masthead .masthead-heading {
   height: 2.75rem;
 }
 
-section#contact {
+section#contact div#contact-detail {
   background-color: #212529;
   background-image: url("../assets/img/map-image.png");
   background-repeat: no-repeat;
   background-position: center;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
 }
 section#contact .section-heading {
   color: #fff;
@@ -12257,4 +12261,10 @@ h1, h2, h3, h4, h5, h6 {
 .div-above-section{
   height: 100px; 
   margin-top: -100px;
+}
+
+section#contact div p{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: #6c757d;
 }
