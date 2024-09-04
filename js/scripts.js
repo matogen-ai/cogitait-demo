@@ -43,6 +43,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
 });
 
 function toggleDescription(id, showLinkId) {
+  debugger
   var description = document.getElementById(id);
   var showLink = document.getElementById(showLinkId);
   

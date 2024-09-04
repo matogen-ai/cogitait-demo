@@ -691,6 +691,11 @@ progress {
     display: none;
 }
 
+.row-top-margin{
+  margin-top: 0;
+}
+
+
 @media (min-width: 527px) {
   .industry-small-header{
       display: none;
@@ -699,6 +704,11 @@ progress {
   .industry-large-header{
       display: block;
   }
+
+  .row-top-margin{
+    margin-top: 2.5rem !important;
+  }
+  
 }
 
 @media (min-width: 576px) {
@@ -12311,10 +12321,6 @@ section#contact div p{
   padding: 1.5rem; 
   text-align: center; 
   background-color: transparent
-}
-
-.row-top-margin{
-  margin-top: 2.5rem;
 }
 
 .contact-invite{
