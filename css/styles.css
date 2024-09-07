@@ -12323,9 +12323,18 @@ section#contact div p{
   background-color: transparent
 }
 
+.contact-invite-container {
+  text-align: center !important;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .contact-invite{
   text-align: center;
   color: white;
+  margin-bottom: 2rem;
+  width: 75%;
 }
 
 .timeline{
