@@ -12341,3 +12341,16 @@ section#contact div p{
   padding: 0;
 }
 
+.flex-contact-bottom-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.center-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.linkedln-image {
+  margin-left: 10px; /* Adjust the margin as needed */
+}
