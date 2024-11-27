@@ -11805,18 +11805,7 @@ p {
     height: 2rem;
     transition: height 0.3s ease-in-out;
   }
-  #mainNav.navbar-shrink {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    background-color: #212529;
-  }
-  #mainNav.navbar-shrink .navbar-brand {
-    font-size: 1.25em;
-  }
-  #mainNav.navbar-shrink .navbar-brand svg,
-  #mainNav.navbar-shrink .navbar-brand img {
-    height: 1.5rem;
-  }
+
   #mainNav .navbar-nav .nav-item {
     margin-right: 1rem;
   }
@@ -12377,36 +12366,31 @@ section#contact div p {
   height: 11rem;
 }
 
-.close-modal-small {
-  width: 1.5rem;
-  height: 1.5rem;
-  position: absolute;
-  top: 1rem;
-  right: 2rem;
+.content-wrapper {
+  height: 100%;
+  overflow-y: scroll; /* Allows vertical scrolling */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
-.modal-dialog-iframe {
-  height: 100%;
-  width: 100%;
+/* hide scrollbar */
+.content-wrapper::-webkit-scrollbar {
+  display: none;
 }
 
-.modal-content-iframe {
-  height: 100%;
-  width: 100%;
+.content {
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.portfolio-modal-iframe {
-  border: none;
-  display: block;
+.modal-body-extend {
+  height: calc(100% - 50px);
+  flex: 1;
 }
 
-.modal-footer-iframe {
-  position: absolute; 
-  bottom: 0; 
-  width: 100%; 
-  display: flex; 
-  justify-content: center;
+.center-text{
+  text-align: center;
 }

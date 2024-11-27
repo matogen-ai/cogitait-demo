@@ -32,7 +32,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
   const responsiveNavItems = [].slice.call(
     document.querySelectorAll("#navbarResponsive .nav-link")
   );
-  
+
   responsiveNavItems.forEach(function (responsiveNavItem) {
     responsiveNavItem.addEventListener("click", () => {
       if (window.getComputedStyle(navbarToggler).display !== "none") {
@@ -43,10 +43,9 @@ window.addEventListener("DOMContentLoaded", (event) => {
 });
 
 function toggleDescription(id, showLinkId) {
-  debugger
   var description = document.getElementById(id);
   var showLink = document.getElementById(showLinkId);
-  
+
   if (description.style.display === "none") {
     description.style.display = "block";
     showLink.style.display = "none";
@@ -56,33 +55,37 @@ function toggleDescription(id, showLinkId) {
   }
 }
 
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-  event.preventDefault(); // Prevent the default form submission
+document
+  .getElementById("contactForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent the default form submission
 
-  const form = event.target;
-  const formData = new FormData(form);
+    const form = event.target;
+    const formData = new FormData(form);
 
-  fetch(form.action, {
+    fetch(form.action, {
       method: form.method,
       body: formData,
       headers: {
-          'Accept': 'application/json'
-      }
-  }).then(response => {
-      if (response.ok) {
-          document.getElementById('confirmationMessage').style.display = 'block';
+        Accept: "application/json",
+      },
+    })
+      .then((response) => {
+        if (response.ok) {
+          document.getElementById("confirmationMessage").style.display =
+            "block";
           form.reset(); // Optionally reset the form
-      } else {
-          return response.json().then(data => {
-              if (Object.hasOwn(data, 'errors')) {
-                  alert(data["errors"].map(error => error["message"]).join(", "));
-              } else {
-                debugger
-                  alert("Oops! There was a problem submitting your form");
-              }
+        } else {
+          return response.json().then((data) => {
+            if (Object.hasOwn(data, "errors")) {
+              alert(data["errors"].map((error) => error["message"]).join(", "));
+            } else {
+              alert("Oops! There was a problem submitting your form");
+            }
           });
-      }
-  }).catch(error => {
-      alert("Oops! There was a problem submitting your form");
+        }
+      })
+      .catch((error) => {
+        alert("Oops! There was a problem submitting your form");
+      });
   });
-});
