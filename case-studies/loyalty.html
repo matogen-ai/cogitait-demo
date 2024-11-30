@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Driving Loyalty with Data</title>
+    <link href="/css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="portfolio-modal">
+      <div class="modal-content">
+        <div class="close-modal-small" id="backButton">
+          <a id="backLink" href="../index.html">
+            <img src="../assets/img/close-icon.svg" alt="Close modal" />
+          </a>
+        </div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <h4 class="text-uppercase industry-small-header">Retail/QSR</h4>
+              <h3 class="text-uppercase industry-large-header">Retail/QSR</h3>
+              <h3 class="industry-large-header">Driving Loyalty with Data</h3>
+              <h3 class="industry-small-header">Driving Loyalty with Data</h3>
+              <h4 class="clickable-sub-header">
+                73% increase in Loyalty transactions
+              </h4>
+
+              <p class="text-muted description2">
+                Leveraging AI with historical purchase data, we boosted our
+                client's loyalty transactions by an impressive 73%. Through
+                campaigns driven by personalised customer insights, we delivered
+                tailored offers that re-engaged dormant customers and elevated
+                overall transaction values. This is more than just data; it’s
+                transformative growth powered by precision-driven customer
+                engagement.
+              </p>
+              <button
+                type="button"
+                class="btn btn-danger custom-close-button btn-lg"
+                aria-label="Close"
+                onclick="goBack()"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function goBack() {
+        window.location.href = "../index.html";
+      }
+      if (document.referrer === "") {
+        document.getElementById("backButton").setAttribute("hidden", "hidden");
+      }
+    </script>
+  </body>
+</html>

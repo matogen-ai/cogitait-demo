@@ -12404,9 +12404,17 @@ section#contact div p {
 }
 
 .modal-footer-iframe {
-  position: absolute; 
-  bottom: 0; 
-  width: 100%; 
-  display: flex; 
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
   justify-content: center;
+}
+
+.center-text {
+  text-align: center;
+}
+.bold-text {
+  font-weight: bold;
+  /* font-size: 1.5rem; */
 }

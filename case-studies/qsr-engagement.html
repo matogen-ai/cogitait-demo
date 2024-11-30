@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maximising Customer Engagement</title>
+    <link href="/css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="portfolio-modal">
+      <div class="modal-content">
+        <div class="close-modal-small" id="backButton">
+          <a id="backLink" href="../index.html">
+            <img src="../assets/img/close-icon.svg" alt="Close modal" />
+          </a>
+        </div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <h4 class="text-uppercase industry-small-header">Retail/QSR</h4>
+              <h3 class="text-uppercase industry-large-header">Retail/QSR</h3>
+              <h3 class="industry-large-header">
+                Maximising Customer Engagement
+              </h3>
+              <h3 class="industry-small-header">
+                Maximising Customer Engagement
+              </h3>
+              <h4 class="clickable-sub-header">48% increase in revenue</h4>
+
+              <p class="text-muted description2">
+                In today’s fiercely competitive landscape, where customer
+                loyalty is constantly challenged, businesses must connect with
+                customers on a deeply personal level. COGIT<span
+                  style="color: red"
+                  >AI</span
+                >T’s Campaign as a Service empowers loyalty-driven sectors—like
+                QSR, retail, and hospitality—to foster this essential
+                connection. <br />We conducted a comprehensive segmentation
+                exercise, analysing data through two robust models powered by
+                our proprietary AI and machine learning tools. The
+                <span class="bold-text">Responder Model</span>
+                predicts customer purchasing propensity, while the
+                <span class="bold-text">Recommender Model</span> targets
+                specific customer clusters based on past purchases, delivering
+                tailored offers by segment. This model even revives dormant
+                customers with enticing value-for-money offers to prevent
+                churn.<br />
+                Together, these models are powered by a dynamic AI algorithm
+                that adjusts in real-time, ensuring every interaction is
+                optimized to boost customer loyalty and lifetime value.
+              </p>
+              <h3 class="industry-large-header">
+                The results speak for themselves
+              </h3>
+              <h3 class="industry-small-header">
+                The results speak for themselves
+              </h3>
+              <p class="text-muted">
+                Revenue increased by
+                <span class="bold-text">+48%</span> Transaction values increased
+                by <span class="bold-text">+38%</span> Loyalty transactions
+                increased by <span class="bold-text">+73%</span> Campaign
+                response rate increased from
+                <span class="bold-text">5.75%</span> to
+                <span class="bold-text">10.2%</span>.
+              </p>
+              <button
+                type="button"
+                class="btn btn-danger custom-close-button btn-lg"
+                aria-label="Close"
+                onclick="goBack()"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function goBack() {
+        window.location.href = "../index.html";
+      }
+      if (document.referrer === "") {
+        document.getElementById("backButton").setAttribute("hidden", "hidden");
+      }
+    </script>
+  </body>
+</html>
