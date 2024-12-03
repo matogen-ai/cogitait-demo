@@ -12123,7 +12123,7 @@ section#contact form#contactForm :-ms-input-placeholder {
     display: flex;
     top: 0;
     width: 100%;
-    padding-top: 0rem;
+    padding-top: 2.5rem;
     padding-bottom: 2.5rem;
     z-index: 10;
   }
@@ -12377,6 +12377,13 @@ section#contact div p {
   height: 11rem;
 }
 
+.case-studies-blocks-large {
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  height: 16rem;
+}
+
 .close-modal-small {
   width: 1.5rem;
   height: 1.5rem;
@@ -12416,5 +12423,40 @@ section#contact div p {
 }
 .bold-text {
   font-weight: bold;
-  /* font-size: 1.5rem; */
+}
+
+.testimonial-text {
+  height: 17rem;
+}
+
+@media (min-width: 339px) {
+  .testimonial-text {
+    height: 15rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .testimonial-text {
+    height: 8rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .testimonial-text {
+    height: 10rem;
+  }
+}
+@media (min-width: 992px) {
+  .testimonial-text {
+    height: 16rem;
+  }
+}
+@media (min-width: 1200px) {
+  .testimonial-text {
+    height: 14rem;
+  }
+}
+
+.what-client-say-counters {
+  color: red;
 }
