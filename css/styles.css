@@ -12384,14 +12384,6 @@ section#contact div p {
   height: 16rem;
 }
 
-.close-modal-small {
-  width: 1.5rem;
-  height: 1.5rem;
-  position: absolute;
-  top: 1rem;
-  right: 2rem;
-}
-
 .modal-dialog-iframe {
   height: 100%;
   width: 100%;
