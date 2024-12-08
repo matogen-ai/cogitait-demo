@@ -12452,3 +12452,11 @@ section#contact div p {
 .what-client-say-counters {
   color: red;
 }
+
+.close-modal-small {
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+}
