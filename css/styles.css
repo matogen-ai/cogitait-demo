@@ -11843,6 +11843,7 @@ header.masthead .masthead-subheading {
   font-family: "Orbitron", sans-serif;
 }
 header.masthead .masthead-heading {
+  color: var(--bs-red);
   font-size: 3.25rem;
   font-weight: 700;
   line-height: 3.25rem;
@@ -12449,8 +12450,8 @@ section#contact div p {
   }
 }
 
-.what-client-say-counters {
-  color: red;
+.red-headers {
+  color: red !important;
 }
 
 .close-modal-small {
@@ -12459,4 +12460,26 @@ section#contact div p {
   position: absolute;
   top: 1rem;
   right: 2rem;
+}
+
+.scroller {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.block {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  background-color: rgba(255, 255, 255, 0);
+  transition: transform 0.5s ease-in-out;
+}
+/* Prevent color change on hover or focus */
+.block:hover,
+.block:focus {
+  background-color: rgba(255, 255, 255, 0); /* Fully transparent */
 }
