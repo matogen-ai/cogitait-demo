@@ -12467,10 +12467,12 @@ section#contact div p {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  margin: 0; /* Ensure no extra spacing on the sides */
+  padding: 0; /* Ensure no padding */
+  position: relative; /* Ensure it's positioned correctly */
 }
 .block {
   min-width: 100vw;
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12478,7 +12480,7 @@ section#contact div p {
   background-color: rgba(255, 255, 255, 0);
   transition: transform 0.5s ease-in-out;
 }
-/* Prevent color change on hover or focus */
+
 .block:hover,
 .block:focus {
   background-color: rgba(255, 255, 255, 0); /* Fully transparent */
