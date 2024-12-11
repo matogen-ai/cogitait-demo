@@ -12418,6 +12418,12 @@ section#contact div p {
   font-weight: bold;
 }
 
+.testimonial-container {
+  display: flex;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
 .testimonial-text {
   height: 17rem;
 }
@@ -12425,6 +12431,12 @@ section#contact div p {
 @media (min-width: 339px) {
   .testimonial-text {
     height: 15rem;
+  }
+}
+
+@media (min-width: 500px) {
+  .testimonial-container {
+    display: none;
   }
 }
 
@@ -12462,14 +12474,86 @@ section#contact div p {
   right: 2rem;
 }
 
-.scroller {
-  display: flex;
-  width: 100vw;
-  height: 100vh;
+.scroller-wrapper {
+  max-width: 100%;
   overflow: hidden;
+  /* max-height: 400px; */
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroller {
+  display: none;
+  width: 120%;
+  height: 100%;
+  overflow: visible;
   margin: 0; /* Ensure no extra spacing on the sides */
   padding: 0; /* Ensure no padding */
   position: relative; /* Ensure it's positioned correctly */
+}
+@media (min-width: 500px) {
+  .scroller {
+    display: flex;
+    width: 100%;
+  }
+}
+
+@media (min-width: 500px) {
+  .scroller {
+    display: flex;
+    width: 105%;
+  }
+}
+
+@media (min-width: 600px) {
+  .scroller {
+    display: flex;
+    width: 125%;
+  }
+}
+
+@media (min-width: 700px) {
+  .scroller {
+    display: flex;
+    width: 120%;
+  }
+}
+
+@media (min-width: 900px) {
+  .scroller {
+    display: flex;
+    width: 127%;
+  }
+}
+
+@media (min-width: 950px) {
+  .scroller {
+    display: flex;
+    width: 135%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .scroller {
+    display: flex;
+    width: 105%;
+  }
+}
+@media (min-width: 1200px) {
+  .scroller {
+    display: flex;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1300px) {
+  .scroller {
+    display: flex;
+    width: 125%;
+  }
 }
 .block {
   min-width: 100vw;
@@ -12485,4 +12569,41 @@ section#contact div p {
 .block:hover,
 .block:focus {
   background-color: rgba(255, 255, 255, 0); /* Fully transparent */
+}
+
+.container_scroll_block {
+  position: relative;
+  background-color: white;
+  margin: 0rem;
+  width: 100%;
+  max-width: 30rem;
+  overflow: visible;
+  text-align: center;
+  box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.001);
+  padding: 1rem;
+}
+.container_scroll_block::before {
+  content: "";
+  position: absolute;
+  top: -0.1rem;
+  left: -0.1rem;
+  right: -0.1rem;
+  bottom: -0.1rem;
+  border: 1px solid black;
+  pointer-events: none; /* Ensure it doesn't interfere with interactions */
+}
+
+.container_scroll_block_container {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Align content at the top */
+  padding: 1rem;
+  text-align: center;
+
+  min-width: 30rem;
+  max-width: 100%;
+  flex-direction: column; /* Stack elements vertically */
+  flex-grow: 1;
+  flex-shrink: 1;
+  height: 30rem;
 }
