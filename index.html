@@ -122,7 +122,9 @@
     <header class="masthead">
       <div class="container">
         <div class="masthead-subheading"></div>
-        <div class="masthead-heading">We use AI to drive business success</div>
+        <div class="masthead-heading">
+          The power of AI for fast informed decisions
+        </div>
       </div>
     </header>
     <!-- Case studies -->
@@ -1522,23 +1524,30 @@
       };
 
       // Scroll blocks
-      let currentIndex = 0;
 
-      document.addEventListener("keydown", (event) => {
-        const blocks = document.querySelectorAll(".block");
-        if (event.key === "ArrowRight") {
-          if (currentIndex < blocks.length - 1) {
-            currentIndex++;
-          }
-        } else if (event.key === "ArrowLeft") {
-          if (currentIndex > 0) {
-            currentIndex--;
-          }
-        }
+      let currentIndex = 0;
+      let direction = 1; // 1 for forward, -1 for backward
+      const blocks = document.querySelectorAll(".block");
+
+      function scrollBlocks() {
         blocks.forEach((block) => {
           block.style.transform = `translateX(-${currentIndex * 100}vw)`;
+          block.style.transition = "transform 5s"; // Smooth scrolling effect
         });
-      });
+
+        currentIndex += direction;
+
+        if (currentIndex >= blocks.length) {
+          direction = -1; // Change direction to backward
+          currentIndex = blocks.length - 1; // Ensure it stops at the last block
+        } else if (currentIndex < 0) {
+          direction = 1; // Change direction to forward
+          currentIndex = 0; // Ensure it stops at the first block
+        }
+      }
+
+      // Scroll every 5 seconds (2 seconds transition + 3 seconds pause)
+      setInterval(scrollBlocks, 5000);
     </script>
   </body>
 </html>
